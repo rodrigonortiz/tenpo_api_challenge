@@ -4,14 +4,16 @@
 import torch
 
 
-def predict(package: dict, input: torch.Tensor) -> torch.Tensor:
+def predict(input: torch.Tensor) -> torch.Tensor:
     """
     Realiza la preciccion multiplicando el tensor por 2
 
     """
 
-    model = package['model']
+    #En caso de llamar al modelo pasar el package como parametro de la funcion e invocarlo
+    #model = package['model']
+    #result = model(input)
 
-    result = model(input)
+    result = torch.mul(input, 2)
 
     return result

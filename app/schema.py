@@ -11,7 +11,7 @@ class InferenceInput(BaseModel):
     """
     Valores del input para realizar la inferencia
     """
-    values_list: list
+    values_list: list[int]
 
 
 
@@ -38,4 +38,3 @@ class ErrorResponse(BaseModel):
     """
     error: bool
     message: str
-    traceback: str

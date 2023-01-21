@@ -1731,3 +1731,124 @@ RuntimeError: PytorchStreamReader failed reading zip archive: not a ZIP archive
 
 [2023-01-21 01:51:12,479] ERROR [16336-8679388672] Application startup failed. Exiting.
 [2023-01-21 01:52:42,634] INFO [16260-8605554176] Stopping reloader process [16260]
+[2023-01-21 12:49:25,717] INFO [18202-8630318592] Running envirnoment: development
+[2023-01-21 12:49:25,717] INFO [18203-8630318592] Running envirnoment: development
+[2023-01-21 12:51:03,644] INFO [18280-8644937216] Running envirnoment: development
+[2023-01-21 12:51:03,644] INFO [18279-8644937216] Running envirnoment: development
+[2023-01-21 12:51:21,745] INFO [18309-8671884800] Running envirnoment: development
+[2023-01-21 12:51:21,809] INFO [18310-8671884800] Running envirnoment: development
+[2023-01-21 12:51:34,023] INFO [18310-13094887424] API predict endpoint called
+[2023-01-21 12:51:34,026] INFO [18310-13094887424] input: values_list=['string']
+[2023-01-21 12:51:34,036] ERROR [18310-8671884800] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '39', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 12:55:03,692] INFO [18365-8639387136] Running envirnoment: development
+[2023-01-21 12:55:03,693] INFO [18364-8639387136] Running envirnoment: development
+[2023-01-21 12:56:14,108] INFO [18395-8600561152] Running envirnoment: development
+[2023-01-21 12:56:14,108] INFO [18394-8600561152] Running envirnoment: development
+[2023-01-21 12:56:24,608] INFO [18395-12951957504] API predict endpoint called
+[2023-01-21 12:56:24,611] INFO [18395-12951957504] input: values_list=[0]
+[2023-01-21 12:56:24,628] ERROR [18395-8600561152] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '32', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 13:07:50,168] INFO [18465-8666916352] Running envirnoment: development
+[2023-01-21 13:07:50,168] INFO [18466-8666916352] Running envirnoment: development
+[2023-01-21 13:07:59,117] INFO [18465-13087375360] API predict endpoint called
+[2023-01-21 13:07:59,120] INFO [18465-13087375360] input: values_list=[0]
+[2023-01-21 13:07:59,132] ERROR [18465-8666916352] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '32', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 14:03:10,055] INFO [20093-8677950976] Running envirnoment: development
+[2023-01-21 14:03:10,086] INFO [20094-8677950976] Running envirnoment: development
+[2023-01-21 14:19:31,444] INFO [20094-13092478976] API predict endpoint called
+[2023-01-21 14:19:31,452] INFO [20094-13092478976] input: values_list=[1, 2, 3, 4]
+[2023-01-21 14:19:31,469] ERROR [20094-8677950976] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 14:19:59,847] INFO [20230-8671340032] Running envirnoment: development
+[2023-01-21 14:19:59,847] INFO [20231-8671340032] Running envirnoment: development
+[2023-01-21 14:20:17,664] INFO [20230-13095493632] API predict endpoint called
+[2023-01-21 14:20:17,668] INFO [20230-13095493632] input: values_list=[1, 2, 3, 4]
+[2023-01-21 14:20:17,703] INFO [20230-13095493632] result: {'tensor_by_2': [2, 4, 6, 8]}
+[2023-01-21 14:20:17,707] ERROR [20230-8671340032] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 14:22:17,959] INFO [20231-13078704128] API predict endpoint called
+[2023-01-21 14:22:17,963] INFO [20231-13078704128] input: values_list=[1, 2, 3, 4]
+[2023-01-21 14:22:17,984] INFO [20231-13078704128] result: {'tensor_by_2': [2, 4, 6, 8]}
+[2023-01-21 14:22:17,988] ERROR [20231-8671340032] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 14:22:25,591] INFO [20286-8640480768] Running envirnoment: development
+[2023-01-21 14:22:25,591] INFO [20287-8640480768] Running envirnoment: development
+[2023-01-21 14:22:36,773] INFO [20286-13035532288] API predict endpoint called
+[2023-01-21 14:22:36,776] INFO [20286-13035532288] input: values_list=[1, 2, 3, 4]
+[2023-01-21 14:22:36,804] INFO [20286-13035532288] result: {'tensor_by_2': [2, 4, 6, 8]}
+[2023-01-21 14:22:36,810] ERROR [20286-8640480768] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 14:25:29,490] INFO [20329-8644519424] Running envirnoment: development
+[2023-01-21 14:25:29,490] INFO [20330-8644519424] Running envirnoment: development
+[2023-01-21 14:25:42,305] INFO [20330-13043617792] API predict endpoint called
+[2023-01-21 14:25:42,308] INFO [20330-13043617792] input: values_list=[1, 2, 3, 4]
+[2023-01-21 14:25:42,334] INFO [20330-13043617792] result: {'tensor_list': [2, 4, 6, 8]}
+[2023-01-21 14:26:13,832] INFO [20329-13043617792] API predict endpoint called
+[2023-01-21 14:26:13,836] INFO [20329-13043617792] input: values_list=[1, 2, 3, 4, 5, 6, 7, 8]
+[2023-01-21 14:26:13,866] INFO [20329-13043617792] result: {'tensor_list': [2, 4, 6, 8, 10, 12, 14, 16]}
+[2023-01-21 14:35:56,277] INFO [20671-8607438336] Running envirnoment: development
+[2023-01-21 14:35:56,277] INFO [20672-8607438336] Running envirnoment: development
+[2023-01-21 14:36:11,409] INFO [20672-12967936000] API predict endpoint called
+[2023-01-21 14:36:11,412] INFO [20672-12967936000] input: values_list=[1, 2, 3, 4, 5, 6, 7, 8]
+[2023-01-21 14:36:11,438] INFO [20672-12967936000] result: {'tensor_list': [2, 4, 6, 8, 10, 12, 14, 16]}
+[2023-01-21 14:36:20,700] INFO [20672-12967936000] API predict endpoint called
+[2023-01-21 14:36:20,701] INFO [20672-12967936000] input: values_list=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+[2023-01-21 14:36:20,702] INFO [20672-12967936000] result: {'tensor_list': [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]}

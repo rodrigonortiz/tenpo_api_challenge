@@ -1,19 +1,26 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from exception_handler import validation_exception_handler, python_exception_handler
-from fastapi.exceptions import RequestValidationError
-from fastapi import FastAPI, Request, status
-from fastapi.logger import logger
-from predict import predict
-from config import CONFIG
-from joblib import load
-from schema import *
-import traceback
-import uvicorn
-import torch
 import os
 import sys
+import traceback
+from joblib import load
+
+import uvicorn
+from fastapi import FastAPI, Request, status
+from fastapi.logger import logger
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import RedirectResponse, JSONResponse
+from fastapi.exceptions import RequestValidationError
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+
+import torch
+
+from predict import predict
+from config import CONFIG
+from exception_handler import validation_exception_handler, python_exception_handler
+from schema import *
 
 
 
@@ -39,13 +46,15 @@ async def startup_event():
 
     logger.info('Running envirnoment: {}'.format(CONFIG['ENV']))
 
-    # Cargar modelo
-    model = torch.jit.load(CONFIG['MODEL_PATH'])
+    # Cargar modelo (en el caso de tener uno se carga aca)
+    #model = torch.jit.load(CONFIG['MODEL_PATH'])
 
     # Insertar el modelo en el estado de la app
+    """
     app.package = {
         "model": model
     }
+    """
 
 
 # Endpoint principal
@@ -66,25 +75,17 @@ def make_predict(request: Request, body: InferenceInput):
     new_tensor = torch.tensor(body.values_list)
 
     # Generar prediccion
-    tensor_by_2 = predict(app.package, new_tensor)
+    tensor_by_2 = predict(new_tensor)
 
     # Convertir tensor a lista para output
     tensor_by_2_list = tensor_by_2.tolist()
 
     # Convertir resultado a json
-    result = {'tensor_by_2': tensor_by_2_list}
+    result = {'tensor_list': tensor_by_2_list}
 
     logger.info(f'result: {result}')
 
     return {
         "error": False,
-        "results": result
+        "result": result
     }
-
-
-
-if __name__ == '__main__':
-    # server api
-    uvicorn.run("main:app", host="127.0.0.1", port=8080,
-                reload=True, log_config="log.ini"
-                )
