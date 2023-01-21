@@ -1852,3 +1852,8 @@ RuntimeError: PytorchStreamReader failed reading zip archive: not a ZIP archive
 [2023-01-21 14:36:20,700] INFO [20672-12967936000] API predict endpoint called
 [2023-01-21 14:36:20,701] INFO [20672-12967936000] input: values_list=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 [2023-01-21 14:36:20,702] INFO [20672-12967936000] result: {'tensor_list': [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]}
+[2023-01-21 14:38:34,406] INFO [20819-8680793600] Running envirnoment: development
+[2023-01-21 14:38:34,407] INFO [20820-8680793600] Running envirnoment: development
+[2023-01-21 14:38:48,599] INFO [20820-13113094144] API predict endpoint called
+[2023-01-21 14:38:48,602] INFO [20820-13113094144] input: values_list=[2, 3, 4, 5]
+[2023-01-21 14:38:48,628] INFO [20820-13113094144] result: {'tensor_list': [4, 6, 8, 10]}
