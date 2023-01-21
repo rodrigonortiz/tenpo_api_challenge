@@ -1,0 +1,1733 @@
+[2023-01-20 19:12:33,075] INFO [14797-8633947648] Will watch for changes in these directories: ['/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app']
+[2023-01-20 19:12:33,075] INFO [14797-8633947648] Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2023-01-20 19:12:33,075] INFO [14797-8633947648] Started reloader process [14797] using StatReload
+[2023-01-20 19:12:34,032] INFO [14800-8642258432] Started server process [14800]
+[2023-01-20 19:12:34,032] INFO [14800-8642258432] Waiting for application startup.
+[2023-01-20 19:12:34,032] INFO [14800-8642258432] Application startup complete.
+[2023-01-20 19:12:44,941] INFO [14800-8642258432] 127.0.0.1:59968 - "GET / HTTP/1.1" 404
+[2023-01-20 19:12:44,988] INFO [14800-8642258432] 127.0.0.1:59968 - "GET /favicon.ico HTTP/1.1" 404
+[2023-01-20 19:12:48,920] INFO [14800-8642258432] 127.0.0.1:59968 - "GET / HTTP/1.1" 404
+[2023-01-20 19:12:50,419] INFO [14800-8642258432] 127.0.0.1:59968 - "GET / HTTP/1.1" 404
+[2023-01-20 19:12:52,766] INFO [14800-8642258432] 127.0.0.1:59968 - "GET / HTTP/1.1" 404
+[2023-01-20 19:13:00,717] INFO [14800-8642258432] 127.0.0.1:59969 - "GET /predict HTTP/1.1" 404
+[2023-01-20 19:13:16,149] INFO [14800-8642258432] 127.0.0.1:59975 - "GET /api/predict/ HTTP/1.1" 405
+[2023-01-20 19:13:21,845] INFO [14800-8642258432] 127.0.0.1:59979 - "GET /api/predict HTTP/1.1" 307
+[2023-01-20 19:13:21,849] INFO [14800-8642258432] 127.0.0.1:59979 - "GET /api/predict/ HTTP/1.1" 405
+[2023-01-20 19:13:25,355] INFO [14800-8642258432] 127.0.0.1:59979 - "GET /api/ HTTP/1.1" 404
+[2023-01-20 19:14:19,210] INFO [14800-8642258432] Shutting down
+[2023-01-20 19:14:19,313] INFO [14800-8642258432] Waiting for application shutdown.
+[2023-01-20 19:14:19,314] INFO [14800-8642258432] Application shutdown complete.
+[2023-01-20 19:14:19,315] INFO [14800-8642258432] Finished server process [14800]
+[2023-01-20 19:14:19,507] INFO [14797-8633947648] Stopping reloader process [14797]
+[2023-01-20 19:14:34,964] INFO [14859-8675927552] Will watch for changes in these directories: ['/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app']
+[2023-01-20 19:14:34,964] INFO [14859-8675927552] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2023-01-20 19:14:34,964] INFO [14859-8675927552] Started reloader process [14859] using StatReload
+[2023-01-20 19:14:35,865] INFO [14863-8597341696] Started server process [14863]
+[2023-01-20 19:14:35,865] INFO [14863-8597341696] Waiting for application startup.
+[2023-01-20 19:14:35,866] INFO [14863-8597341696] Application startup complete.
+[2023-01-20 19:15:31,550] INFO [14863-8597341696] 127.0.0.1:60033 - "GET /docs HTTP/1.1" 200
+[2023-01-20 19:15:31,870] INFO [14863-8597341696] 127.0.0.1:60033 - "GET /openapi.json HTTP/1.1" 200
+[2023-01-20 19:15:46,628] INFO [14863-12932440064] API predict endpoint called
+[2023-01-20 19:15:46,629] INFO [14863-12932440064] input: values_list=['string']
+[2023-01-20 19:15:46,648] ERROR [14863-8597341696] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '39', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:15:46,648] ERROR [14863-8597341696] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 174, in __call__
+    response = await self.handler(request, exc)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/exception_handler.py", line 63, in python_exception_handler
+    content=get_error_response(request, exc)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/exception_handler.py", line 24, in get_error_response
+    if CONFIG['DEBUG']:
+NameError: name 'CONFIG' is not defined
+[2023-01-20 19:15:46,654] INFO [14863-8597341696] 127.0.0.1:60034 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:16:09,018] INFO [14863-12932440064] API predict endpoint called
+[2023-01-20 19:16:09,019] INFO [14863-12932440064] input: values_list=[1, 2, 3, 4]
+[2023-01-20 19:16:09,022] ERROR [14863-8597341696] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:16:09,022] ERROR [14863-8597341696] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 174, in __call__
+    response = await self.handler(request, exc)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/exception_handler.py", line 63, in python_exception_handler
+    content=get_error_response(request, exc)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/exception_handler.py", line 24, in get_error_response
+    if CONFIG['DEBUG']:
+NameError: name 'CONFIG' is not defined
+[2023-01-20 19:16:09,024] INFO [14863-8597341696] 127.0.0.1:60044 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:16:26,438] WARNING [14859-8675927552] StatReload detected changes in 'exception_handler.py'. Reloading...
+[2023-01-20 19:16:26,516] INFO [14863-8597341696] Shutting down
+[2023-01-20 19:16:26,618] INFO [14863-8597341696] Waiting for application shutdown.
+[2023-01-20 19:16:26,618] INFO [14863-8597341696] Application shutdown complete.
+[2023-01-20 19:16:26,618] INFO [14863-8597341696] Finished server process [14863]
+[2023-01-20 19:16:27,881] INFO [14909-8611767808] Started server process [14909]
+[2023-01-20 19:16:27,881] INFO [14909-8611767808] Waiting for application startup.
+[2023-01-20 19:16:27,882] INFO [14909-8611767808] Application startup complete.
+[2023-01-20 19:16:30,351] INFO [14909-8611767808] 127.0.0.1:60058 - "GET /docs HTTP/1.1" 200
+[2023-01-20 19:16:30,433] INFO [14909-8611767808] 127.0.0.1:60058 - "GET /openapi.json HTTP/1.1" 200
+[2023-01-20 19:16:33,953] INFO [14909-8611767808] 127.0.0.1:60058 - "GET /docs HTTP/1.1" 200
+[2023-01-20 19:16:34,014] INFO [14909-8611767808] 127.0.0.1:60058 - "GET /openapi.json HTTP/1.1" 200
+[2023-01-20 19:16:39,993] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:16:39,994] INFO [14909-12960350208] input: values_list=['string']
+[2023-01-20 19:16:40,001] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '39', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:16:40,008] INFO [14909-8611767808] 127.0.0.1:60059 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:16:40,008] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:17:10,826] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:17:10,826] INFO [14909-12960350208] input: values_list=[1, 2, 3, 4]
+[2023-01-20 19:17:10,828] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:17:10,830] INFO [14909-8611767808] 127.0.0.1:60071 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:17:10,830] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:17:12,430] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:17:12,430] INFO [14909-12960350208] input: values_list=[1, 2, 3, 4]
+[2023-01-20 19:17:12,432] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:17:12,433] INFO [14909-8611767808] 127.0.0.1:60072 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:17:12,434] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:09,648] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:09,649] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:09,651] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:09,652] INFO [14909-8611767808] 127.0.0.1:60086 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:09,653] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:10,701] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:10,702] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:10,704] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:10,705] INFO [14909-8611767808] 127.0.0.1:60089 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:10,706] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:11,287] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:11,287] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:11,290] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:11,291] INFO [14909-8611767808] 127.0.0.1:60090 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:11,292] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:11,781] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:11,781] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:11,783] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:11,784] INFO [14909-8611767808] 127.0.0.1:60091 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:11,785] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:12,276] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:12,277] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:12,279] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:12,280] INFO [14909-8611767808] 127.0.0.1:60092 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:12,281] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:12,757] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:12,757] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:12,759] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:12,761] INFO [14909-8611767808] 127.0.0.1:60093 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:12,761] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:13,665] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:13,666] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:13,668] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:13,669] INFO [14909-8611767808] 127.0.0.1:60095 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:13,670] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:14,302] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:14,302] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:14,305] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:14,306] INFO [14909-8611767808] 127.0.0.1:60096 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:14,306] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:15,365] INFO [14909-12960350208] API predict endpoint called
+[2023-01-20 19:18:15,366] INFO [14909-12960350208] input: values_list=[[1, 2, 3, 4]]
+[2023-01-20 19:18:15,368] ERROR [14909-8611767808] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '40', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:15,369] INFO [14909-8611767808] 127.0.0.1:60097 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:15,370] ERROR [14909-8611767808] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:18:35,936] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:18:35,979] INFO [14909-8611767808] Shutting down
+[2023-01-20 19:18:36,081] INFO [14909-8611767808] Waiting for application shutdown.
+[2023-01-20 19:18:36,081] INFO [14909-8611767808] Application shutdown complete.
+[2023-01-20 19:18:36,081] INFO [14909-8611767808] Finished server process [14909]
+[2023-01-20 19:18:37,305] INFO [14941-8675960320] Started server process [14941]
+[2023-01-20 19:18:37,305] INFO [14941-8675960320] Waiting for application startup.
+[2023-01-20 19:18:37,305] INFO [14941-8675960320] Application startup complete.
+[2023-01-20 19:18:40,411] INFO [14941-8675960320] 127.0.0.1:60109 - "GET /docs HTTP/1.1" 200
+[2023-01-20 19:18:40,489] INFO [14941-8675960320] 127.0.0.1:60109 - "GET /openapi.json HTTP/1.1" 200
+[2023-01-20 19:18:53,567] INFO [14941-13089824768] API predict endpoint called
+[2023-01-20 19:18:53,568] INFO [14941-13089824768] input: values_list=[1, 2, 3, 4]
+[2023-01-20 19:18:53,574] ERROR [14941-8675960320] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:18:53,579] INFO [14941-8675960320] 127.0.0.1:60110 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:18:53,580] ERROR [14941-8675960320] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 66, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:19:39,860] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:19:39,951] INFO [14941-8675960320] Shutting down
+[2023-01-20 19:19:40,053] INFO [14941-8675960320] Waiting for application shutdown.
+[2023-01-20 19:19:40,053] INFO [14941-8675960320] Application shutdown complete.
+[2023-01-20 19:19:40,054] INFO [14941-8675960320] Finished server process [14941]
+[2023-01-20 19:19:41,167] INFO [14960-8631674368] Started server process [14960]
+[2023-01-20 19:19:41,167] INFO [14960-8631674368] Waiting for application startup.
+[2023-01-20 19:19:41,167] INFO [14960-8631674368] Application startup complete.
+[2023-01-20 19:19:44,791] INFO [14960-8631674368] 127.0.0.1:60130 - "GET /docs HTTP/1.1" 200
+[2023-01-20 19:19:44,867] INFO [14960-8631674368] 127.0.0.1:60130 - "GET /openapi.json HTTP/1.1" 200
+[2023-01-20 19:20:02,643] INFO [14960-12999999488] API predict endpoint called
+[2023-01-20 19:20:02,643] INFO [14960-12999999488] input: values_list=[1, 2, 3, 4, 5, 6]
+[2023-01-20 19:20:02,650] ERROR [14960-8631674368] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '42', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:20:02,655] INFO [14960-8631674368] 127.0.0.1:60131 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:20:02,655] ERROR [14960-8631674368] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 66, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:20:32,335] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:20:32,346] INFO [14960-8631674368] Shutting down
+[2023-01-20 19:20:32,447] INFO [14960-8631674368] Waiting for application shutdown.
+[2023-01-20 19:20:32,448] INFO [14960-8631674368] Application shutdown complete.
+[2023-01-20 19:20:32,448] INFO [14960-8631674368] Finished server process [14960]
+[2023-01-20 19:20:33,563] INFO [14981-8672540160] Started server process [14981]
+[2023-01-20 19:20:33,563] INFO [14981-8672540160] Waiting for application startup.
+[2023-01-20 19:20:33,564] INFO [14981-8672540160] Application startup complete.
+[2023-01-20 19:20:34,687] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:20:34,780] INFO [14981-8672540160] Shutting down
+[2023-01-20 19:20:34,883] INFO [14981-8672540160] Waiting for application shutdown.
+[2023-01-20 19:20:34,884] INFO [14981-8672540160] Application shutdown complete.
+[2023-01-20 19:20:34,884] INFO [14981-8672540160] Finished server process [14981]
+[2023-01-20 19:20:35,979] INFO [14988-8635876864] Started server process [14988]
+[2023-01-20 19:20:35,979] INFO [14988-8635876864] Waiting for application startup.
+[2023-01-20 19:20:35,980] INFO [14988-8635876864] Application startup complete.
+[2023-01-20 19:20:56,646] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:20:56,746] INFO [14988-8635876864] Shutting down
+[2023-01-20 19:20:56,849] INFO [14988-8635876864] Waiting for application shutdown.
+[2023-01-20 19:20:56,849] INFO [14988-8635876864] Application shutdown complete.
+[2023-01-20 19:20:56,849] INFO [14988-8635876864] Finished server process [14988]
+[2023-01-20 19:20:57,957] INFO [14996-8612365824] Started server process [14996]
+[2023-01-20 19:20:57,957] INFO [14996-8612365824] Waiting for application startup.
+[2023-01-20 19:20:57,957] INFO [14996-8612365824] Application startup complete.
+[2023-01-20 19:21:02,628] INFO [14996-8612365824] 127.0.0.1:60159 - "GET /docs HTTP/1.1" 200
+[2023-01-20 19:21:02,712] INFO [14996-8612365824] 127.0.0.1:60159 - "GET /openapi.json HTTP/1.1" 200
+[2023-01-20 19:21:14,963] INFO [14996-12959776768] API predict endpoint called
+[2023-01-20 19:21:14,963] INFO [14996-12959776768] input: values_list=[1, 2, 3]
+[2023-01-20 19:21:14,968] ERROR [14996-8612365824] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:21:14,974] INFO [14996-8612365824] 127.0.0.1:60163 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:21:14,975] ERROR [14996-8612365824] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(list(body))
+ValueError: too many dimensions 'str'
+[2023-01-20 19:21:35,196] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:21:35,251] INFO [14996-8612365824] Shutting down
+[2023-01-20 19:21:35,353] INFO [14996-8612365824] Waiting for application shutdown.
+[2023-01-20 19:21:35,354] INFO [14996-8612365824] Application shutdown complete.
+[2023-01-20 19:21:35,354] INFO [14996-8612365824] Finished server process [14996]
+[2023-01-20 19:21:36,499] INFO [15019-8605234688] Started server process [15019]
+[2023-01-20 19:21:36,499] INFO [15019-8605234688] Waiting for application startup.
+[2023-01-20 19:21:36,499] INFO [15019-8605234688] Application startup complete.
+[2023-01-20 19:21:37,872] INFO [15019-12947304448] API predict endpoint called
+[2023-01-20 19:21:37,873] INFO [15019-12947304448] input: values_list=[1, 2, 3]
+[2023-01-20 19:21:37,879] ERROR [15019-8605234688] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:21:37,884] INFO [15019-8605234688] 127.0.0.1:60170 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:21:37,885] ERROR [15019-8605234688] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:21:38,777] INFO [15019-12947304448] API predict endpoint called
+[2023-01-20 19:21:38,777] INFO [15019-12947304448] input: values_list=[1, 2, 3]
+[2023-01-20 19:21:38,779] ERROR [15019-8605234688] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:21:38,780] INFO [15019-8605234688] 127.0.0.1:60171 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:21:38,781] ERROR [15019-8605234688] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:21:40,333] INFO [15019-12947304448] API predict endpoint called
+[2023-01-20 19:21:40,333] INFO [15019-12947304448] input: values_list=[1, 2, 3]
+[2023-01-20 19:21:40,336] ERROR [15019-8605234688] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:21:40,336] INFO [15019-8605234688] 127.0.0.1:60174 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:21:40,337] ERROR [15019-8605234688] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 64, in make_predict
+    new_tensor = torch.tensor(body)
+RuntimeError: Could not infer dtype of InferenceInput
+[2023-01-20 19:56:47,106] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:56:47,175] INFO [15019-8605234688] Shutting down
+[2023-01-20 19:56:47,277] INFO [15019-8605234688] Waiting for application shutdown.
+[2023-01-20 19:56:47,277] INFO [15019-8605234688] Application shutdown complete.
+[2023-01-20 19:56:47,278] INFO [15019-8605234688] Finished server process [15019]
+[2023-01-20 19:56:48,533] INFO [15132-8602232320] Started server process [15132]
+[2023-01-20 19:56:48,533] INFO [15132-8602232320] Waiting for application startup.
+[2023-01-20 19:56:48,533] INFO [15132-8602232320] Application startup complete.
+[2023-01-20 19:56:56,145] INFO [15132-12942168064] API predict endpoint called
+[2023-01-20 19:56:56,146] INFO [15132-12942168064] input: values_list=[1, 2, 3]
+[2023-01-20 19:56:56,154] ERROR [15132-8602232320] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:56:56,158] INFO [15132-8602232320] 127.0.0.1:60669 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:56:56,158] ERROR [15132-8602232320] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 67, in make_predict
+    tensor_by_2 = predict(app.package, new_tensor)
+AttributeError: 'FastAPI' object has no attribute 'package'
+[2023-01-20 19:59:23,009] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:59:23,059] INFO [15132-8602232320] Shutting down
+[2023-01-20 19:59:23,161] INFO [15132-8602232320] Waiting for application shutdown.
+[2023-01-20 19:59:23,162] INFO [15132-8602232320] Application shutdown complete.
+[2023-01-20 19:59:23,162] INFO [15132-8602232320] Finished server process [15132]
+[2023-01-20 19:59:24,415] INFO [15160-8598103552] Started server process [15160]
+[2023-01-20 19:59:24,415] INFO [15160-8598103552] Waiting for application startup.
+[2023-01-20 19:59:24,415] INFO [15160-8598103552] Application startup complete.
+[2023-01-20 19:59:43,736] INFO [15160-12931198976] API predict endpoint called
+[2023-01-20 19:59:43,737] INFO [15160-12931198976] input: values_list=[1, 2, 3]
+[2023-01-20 19:59:43,739] ERROR [15160-8598103552] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 19:59:43,746] INFO [15160-8598103552] 127.0.0.1:60729 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 19:59:43,747] ERROR [15160-8598103552] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 67, in make_predict
+    tensor_by_2 = predict(app_package, new_tensor)
+NameError: name 'app_package' is not defined
+[2023-01-20 19:59:51,440] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-20 19:59:51,474] INFO [15160-8598103552] Shutting down
+[2023-01-20 19:59:51,576] INFO [15160-8598103552] Waiting for application shutdown.
+[2023-01-20 19:59:51,576] INFO [15160-8598103552] Application shutdown complete.
+[2023-01-20 19:59:51,576] INFO [15160-8598103552] Finished server process [15160]
+[2023-01-20 19:59:52,769] INFO [15178-8634189312] Started server process [15178]
+[2023-01-20 19:59:52,769] INFO [15178-8634189312] Waiting for application startup.
+[2023-01-20 19:59:52,769] INFO [15178-8634189312] Application startup complete.
+[2023-01-20 20:02:11,312] INFO [15178-13004017664] API predict endpoint called
+[2023-01-20 20:02:11,313] INFO [15178-13004017664] input: values_list=[1, 2, 3]
+[2023-01-20 20:02:11,314] ERROR [15178-8634189312] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-20 20:02:11,319] INFO [15178-8634189312] 127.0.0.1:60789 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-20 20:02:11,319] ERROR [15178-8634189312] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 67, in make_predict
+    tensor_by_2 = predict(app.package, new_tensor)
+AttributeError: 'FastAPI' object has no attribute 'package'
+[2023-01-21 00:37:15,647] INFO [15178-13004017664] API predict endpoint called
+[2023-01-21 00:37:15,649] INFO [15178-13004017664] input: values_list=[1, 2, 3]
+[2023-01-21 00:37:15,650] ERROR [15178-8634189312] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '36', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 00:37:15,651] INFO [15178-8634189312] 127.0.0.1:61908 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-21 00:37:15,652] ERROR [15178-8634189312] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 67, in make_predict
+    tensor_by_2 = predict(app.package, new_tensor)
+AttributeError: 'FastAPI' object has no attribute 'package'
+[2023-01-21 00:47:17,533] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 00:47:17,540] INFO [15178-8634189312] Shutting down
+[2023-01-21 00:47:17,642] INFO [15178-8634189312] Waiting for application shutdown.
+[2023-01-21 00:47:17,643] INFO [15178-8634189312] Application shutdown complete.
+[2023-01-21 00:47:17,643] INFO [15178-8634189312] Finished server process [15178]
+[2023-01-21 00:47:31,487] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:10:49,201] WARNING [14859-8675927552] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:10:50,331] INFO [15735-8673244672] Started server process [15735]
+[2023-01-21 01:10:50,331] INFO [15735-8673244672] Waiting for application startup.
+[2023-01-21 01:10:50,332] INFO [15735-8673244672] Application startup complete.
+[2023-01-21 01:11:01,674] INFO [15735-8673244672] Shutting down
+[2023-01-21 01:11:01,778] INFO [15735-8673244672] Waiting for application shutdown.
+[2023-01-21 01:11:01,779] INFO [15735-8673244672] Application shutdown complete.
+[2023-01-21 01:11:01,780] INFO [15735-8673244672] Finished server process [15735]
+[2023-01-21 01:11:01,974] INFO [14859-8675927552] Stopping reloader process [14859]
+[2023-01-21 01:11:06,964] INFO [15767-8604513792] Will watch for changes in these directories: ['/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app']
+[2023-01-21 01:11:06,964] INFO [15767-8604513792] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2023-01-21 01:11:06,964] INFO [15767-8604513792] Started reloader process [15767] using StatReload
+[2023-01-21 01:11:07,878] INFO [15769-8672482816] Started server process [15769]
+[2023-01-21 01:11:07,879] INFO [15769-8672482816] Waiting for application startup.
+[2023-01-21 01:11:07,879] INFO [15769-8672482816] Application startup complete.
+[2023-01-21 01:11:23,683] INFO [15769-8672482816] Shutting down
+[2023-01-21 01:11:23,785] INFO [15769-8672482816] Waiting for application shutdown.
+[2023-01-21 01:11:23,787] INFO [15769-8672482816] Application shutdown complete.
+[2023-01-21 01:11:23,787] INFO [15769-8672482816] Finished server process [15769]
+[2023-01-21 01:11:23,977] INFO [15767-8604513792] Stopping reloader process [15767]
+[2023-01-21 01:42:45,173] INFO [16099-8610555392] Will watch for changes in these directories: ['/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app']
+[2023-01-21 01:42:45,173] INFO [16099-8610555392] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2023-01-21 01:42:45,173] INFO [16099-8610555392] Started reloader process [16099] using StatReload
+[2023-01-21 01:42:46,078] INFO [16103-8667108864] Started server process [16103]
+[2023-01-21 01:42:46,078] INFO [16103-8667108864] Waiting for application startup.
+[2023-01-21 01:42:46,078] INFO [16103-8667108864] Application startup complete.
+[2023-01-21 01:42:58,834] WARNING [16099-8610555392] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:42:58,840] INFO [16103-8667108864] Shutting down
+[2023-01-21 01:42:58,942] INFO [16103-8667108864] Waiting for application shutdown.
+[2023-01-21 01:42:58,943] INFO [16103-8667108864] Application shutdown complete.
+[2023-01-21 01:42:58,943] INFO [16103-8667108864] Finished server process [16103]
+[2023-01-21 01:43:00,025] INFO [16116-8644494848] Started server process [16116]
+[2023-01-21 01:43:00,025] INFO [16116-8644494848] Waiting for application startup.
+[2023-01-21 01:43:00,025] INFO [16116-8644494848] Application startup complete.
+[2023-01-21 01:43:26,632] WARNING [16099-8610555392] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:43:26,668] INFO [16116-8644494848] Shutting down
+[2023-01-21 01:43:26,770] INFO [16116-8644494848] Waiting for application shutdown.
+[2023-01-21 01:43:26,772] INFO [16116-8644494848] Application shutdown complete.
+[2023-01-21 01:43:26,772] INFO [16116-8644494848] Finished server process [16116]
+[2023-01-21 01:43:27,873] INFO [16130-8668419584] Started server process [16130]
+[2023-01-21 01:43:27,873] INFO [16130-8668419584] Waiting for application startup.
+[2023-01-21 01:43:27,873] INFO [16130-8668419584] Application startup complete.
+[2023-01-21 01:43:55,736] INFO [16130-8668419584] Shutting down
+[2023-01-21 01:43:55,839] INFO [16130-8668419584] Waiting for application shutdown.
+[2023-01-21 01:43:55,840] INFO [16130-8668419584] Application shutdown complete.
+[2023-01-21 01:43:55,841] INFO [16130-8668419584] Finished server process [16130]
+[2023-01-21 01:43:56,028] INFO [16099-8610555392] Stopping reloader process [16099]
+[2023-01-21 01:44:00,845] INFO [16171-8664491520] Will watch for changes in these directories: ['/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app']
+[2023-01-21 01:44:00,845] INFO [16171-8664491520] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2023-01-21 01:44:00,845] INFO [16171-8664491520] Started reloader process [16171] using StatReload
+[2023-01-21 01:44:01,734] INFO [16173-8670377472] Started server process [16173]
+[2023-01-21 01:44:01,734] INFO [16173-8670377472] Waiting for application startup.
+[2023-01-21 01:44:01,734] INFO [16173-8670377472] Application startup complete.
+[2023-01-21 01:46:05,607] WARNING [16171-8664491520] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:46:05,657] INFO [16173-8670377472] Shutting down
+[2023-01-21 01:46:05,759] INFO [16173-8670377472] Waiting for application shutdown.
+[2023-01-21 01:46:05,760] INFO [16173-8670377472] Application shutdown complete.
+[2023-01-21 01:46:05,760] INFO [16173-8670377472] Finished server process [16173]
+[2023-01-21 01:46:06,884] INFO [16205-8675390976] Started server process [16205]
+[2023-01-21 01:46:06,884] INFO [16205-8675390976] Waiting for application startup.
+[2023-01-21 01:46:06,884] INFO [16205-8675390976] Application startup complete.
+[2023-01-21 01:46:36,260] INFO [16205-8675390976] Shutting down
+[2023-01-21 01:46:36,363] INFO [16205-8675390976] Waiting for application shutdown.
+[2023-01-21 01:46:36,365] INFO [16205-8675390976] Application shutdown complete.
+[2023-01-21 01:46:36,366] INFO [16205-8675390976] Finished server process [16205]
+[2023-01-21 01:46:36,557] INFO [16171-8664491520] Stopping reloader process [16171]
+[2023-01-21 01:46:42,018] INFO [16260-8605554176] Will watch for changes in these directories: ['/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app']
+[2023-01-21 01:46:42,019] INFO [16260-8605554176] Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+[2023-01-21 01:46:42,019] INFO [16260-8605554176] Started reloader process [16260] using StatReload
+[2023-01-21 01:46:42,912] INFO [16262-8677885440] Started server process [16262]
+[2023-01-21 01:46:42,912] INFO [16262-8677885440] Waiting for application startup.
+[2023-01-21 01:46:42,912] INFO [16262-8677885440] Application startup complete.
+[2023-01-21 01:46:52,596] INFO [16262-8677885440] 127.0.0.1:63642 - "GET / HTTP/1.1" 404
+[2023-01-21 01:46:52,651] INFO [16262-8677885440] 127.0.0.1:63642 - "GET /favicon.ico HTTP/1.1" 404
+[2023-01-21 01:46:56,443] INFO [16262-8677885440] 127.0.0.1:63642 - "GET /docs HTTP/1.1" 200
+[2023-01-21 01:46:56,530] INFO [16262-8677885440] 127.0.0.1:63642 - "GET /openapi.json HTTP/1.1" 200
+[2023-01-21 01:47:11,632] INFO [16262-13091676160] API predict endpoint called
+[2023-01-21 01:47:11,633] INFO [16262-13091676160] input: values_list=[1, 2, 3, 4]
+[2023-01-21 01:47:11,634] ERROR [16262-8677885440] Request info:
+{
+    "host": "127.0.0.1",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/api/predict/",
+    "headers": "Headers({'host': '127.0.0.1:8080', 'connection': 'keep-alive', 'content-length': '38', 'sec-ch-ua': '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"', 'accept': 'application/json', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36', 'sec-ch-ua-platform': '\"macOS\"', 'origin': 'http://127.0.0.1:8080', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8080/docs', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'es-419,es;q=0.9'})",
+    "path_params": "{}",
+    "query_params": "",
+    "cookies": "{}"
+}
+[2023-01-21 01:47:11,640] INFO [16262-8677885440] 127.0.0.1:63643 - "POST /api/predict/ HTTP/1.1" 500
+[2023-01-21 01:47:11,641] ERROR [16262-8677885440] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 86, in __call__
+    raise exc from None
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/uvicorn/middleware/message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 69, in make_predict
+    tensor_by_2 = predict(app.package, new_tensor)
+AttributeError: 'FastAPI' object has no attribute 'package'
+[2023-01-21 01:48:42,826] WARNING [16260-8605554176] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:48:42,930] INFO [16262-8677885440] Shutting down
+[2023-01-21 01:48:43,032] INFO [16262-8677885440] Waiting for application shutdown.
+[2023-01-21 01:48:43,032] INFO [16262-8677885440] Application shutdown complete.
+[2023-01-21 01:48:43,032] INFO [16262-8677885440] Finished server process [16262]
+[2023-01-21 01:48:44,220] INFO [16282-8665179648] Started server process [16282]
+[2023-01-21 01:48:44,221] INFO [16282-8665179648] Waiting for application startup.
+[2023-01-21 01:48:44,221] INFO [16282-8665179648] Running envirnoment: development
+[2023-01-21 01:48:44,231] ERROR [16282-8665179648] Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 43, in startup_event
+    model = torch.jit.load(CONFIG['MODEL_PATH'])
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/torch/jit/_serialization.py", line 162, in load
+    cpp_module = torch._C.import_ir_module(cu, str(f), map_location, _extra_files)
+RuntimeError: PytorchStreamReader failed reading zip archive: not a ZIP archive
+
+[2023-01-21 01:48:44,231] ERROR [16282-8665179648] Application startup failed. Exiting.
+[2023-01-21 01:50:19,403] WARNING [16260-8605554176] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:50:20,506] INFO [16299-8597779968] Started server process [16299]
+[2023-01-21 01:50:20,506] INFO [16299-8597779968] Waiting for application startup.
+[2023-01-21 01:50:20,506] INFO [16299-8597779968] Running envirnoment: development
+[2023-01-21 01:50:20,507] INFO [16299-8597779968] Application startup complete.
+[2023-01-21 01:50:31,714] WARNING [16260-8605554176] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:50:31,748] INFO [16299-8597779968] Shutting down
+[2023-01-21 01:50:31,848] INFO [16299-8597779968] Waiting for application shutdown.
+[2023-01-21 01:50:31,849] INFO [16299-8597779968] Application shutdown complete.
+[2023-01-21 01:50:31,849] INFO [16299-8597779968] Finished server process [16299]
+[2023-01-21 01:50:33,059] INFO [16313-8673687040] Started server process [16313]
+[2023-01-21 01:50:33,059] INFO [16313-8673687040] Waiting for application startup.
+[2023-01-21 01:50:33,059] INFO [16313-8673687040] Running envirnoment: development
+[2023-01-21 01:50:33,060] ERROR [16313-8673687040] Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 47, in startup_event
+    "model": model
+NameError: name 'model' is not defined
+
+[2023-01-21 01:50:33,060] ERROR [16313-8673687040] Application startup failed. Exiting.
+[2023-01-21 01:50:38,949] WARNING [16260-8605554176] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:50:39,925] INFO [16326-8643765760] Started server process [16326]
+[2023-01-21 01:50:39,925] INFO [16326-8643765760] Waiting for application startup.
+[2023-01-21 01:50:39,925] INFO [16326-8643765760] Running envirnoment: development
+[2023-01-21 01:50:39,933] ERROR [16326-8643765760] Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 43, in startup_event
+    model = torch.jit.load(CONFIG['MODEL_PATH'])
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/torch/jit/_serialization.py", line 162, in load
+    cpp_module = torch._C.import_ir_module(cu, str(f), map_location, _extra_files)
+RuntimeError: PytorchStreamReader failed reading zip archive: not a ZIP archive
+
+[2023-01-21 01:50:39,934] ERROR [16326-8643765760] Application startup failed. Exiting.
+[2023-01-21 01:51:11,527] WARNING [16260-8605554176] StatReload detected changes in 'main.py'. Reloading...
+[2023-01-21 01:51:12,470] INFO [16336-8679388672] Started server process [16336]
+[2023-01-21 01:51:12,470] INFO [16336-8679388672] Waiting for application startup.
+[2023-01-21 01:51:12,470] INFO [16336-8679388672] Running envirnoment: development
+[2023-01-21 01:51:12,478] ERROR [16336-8679388672] Traceback (most recent call last):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/app/main.py", line 43, in startup_event
+    model = torch.jit.load(CONFIG['MODEL_PATH'])
+  File "/Users/rodrigo/Desktop/tenpo/tenpo_api_challenge/challenge/lib/python3.9/site-packages/torch/jit/_serialization.py", line 162, in load
+    cpp_module = torch._C.import_ir_module(cu, str(f), map_location, _extra_files)
+RuntimeError: PytorchStreamReader failed reading zip archive: not a ZIP archive
+
+[2023-01-21 01:51:12,479] ERROR [16336-8679388672] Application startup failed. Exiting.
+[2023-01-21 01:52:42,634] INFO [16260-8605554176] Stopping reloader process [16260]
