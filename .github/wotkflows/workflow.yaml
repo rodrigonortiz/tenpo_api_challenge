@@ -1,0 +1,100 @@
+name: "Desplegar a Staging"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+env:
+  PROJECT_ID: ID_PROYECTO_GCP # Colocar el ID de proyecto en gcp
+  DEPLOYMENT_NAME: delay-flights
+  IMAGE: delay-flights
+jobs:
+  
+  deployment_gcr:
+    name: "Pushing to GCR"
+   
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Checkout" # Checkout del codigo de repositorio
+        uses: "actions/checkout@v3"
+
+      # Setupe gcloud cli
+      - uses: google-github-actions/setup-gcloud@94337306dda8180d967a56932ceb4ddcf01edae7
+        with:
+          service_account_key: ${{ secrets.GCLOUD_SERVICE_KEY }}  #Secret gcp
+          project_id: ID_PROYECTO_GCP # Colocar el ID de proyecto en gcp
+
+      # Configurar Docker para usar la gcloud command-line tool como una credencial
+      # helper authentication
+      - run: |-
+          gcloud --quiet auth configure-docker
+      # Buildear imagen Docker
+      - name: Build
+        run: |-
+          docker build \
+            --tag "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
+            --no-cache \
+            --build-arg GITHUB_SHA="$GITHUB_SHA" \
+            --build-arg GITHUB_REF="$GITHUB_REF" \
+            .
+      # Pushear la imagen de Docker a Google Container Registry
+      - name: Publish
+        run: |-
+          docker push "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
+  terraform:
+    name: 'Terraform'
+    needs: [deployment_gcr]
+    runs-on: ubuntu-latest
+
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    # Checkout the repository to the GitHub Actions runner
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v1
+
+
+    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
+    - name: Terraform Init
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_working_dir: 'terraform'
+        tf_actions_version: 0.14.7
+        tf_actions_subcommand: 'init'
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}
+
+    # Checks that all Terraform configuration files adhere to a canonical format
+    # - name: Terraform Format
+    #   uses: hashicorp/terraform-github-actions@master
+    #   with:
+    #     tf_actions_working_dir: 'terraform'
+    #     tf_actions_version: 0.14.7
+    #     tf_actions_subcommand: 'fmt'
+
+    # Generates an execution plan for Terraform
+    - name: Terraform Plan
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_working_dir: 'terraform'
+        tf_actions_version: 0.14.7
+        tf_actions_subcommand: 'plan'
+        args: '-var=gcr_path=gcr.io/cloud-projects-365117/delay-flights -var=github_sha=${{ github.sha }}'
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}
+
+      # On push to main, build or change infrastructure according to Terraform configuration files
+      # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
+    - name: Terraform Apply
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      id: apply
+      run: terraform -chdir=terraform/ apply -auto-approve -input=false -var="gcr_path=gcr.io/cloud-projects-365117/delay-flights" -var="github_sha=${{ github.sha }}"
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}
