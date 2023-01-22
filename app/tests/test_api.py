@@ -9,7 +9,6 @@ import pytest
 
 @pytest.fixture
 def client():
-    # use "with" statement to run "startup" event of FastAPI
     with TestClient(app) as c:
         yield c
 
