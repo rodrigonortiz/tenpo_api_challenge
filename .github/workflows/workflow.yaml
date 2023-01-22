@@ -21,7 +21,7 @@ jobs:
       # Setupe gcloud cli
       - uses: google-github-actions/setup-gcloud@94337306dda8180d967a56932ceb4ddcf01edae7
         with:
-          service_account_key: ${{ secrets.GCLOUD_SERVICE_KEY }}  #Secret gcp
+          service_account_key: ${{ secrets.GCLOUD_SERVICE_KEY }}  #Agregar secret gcp en variable de entorno github
           project_id: ID_PROYECTO_GCP # Colocar el ID de proyecto en gcp
 
       # Configurar Docker para usar la gcloud command-line tool como una credencial
@@ -71,15 +71,7 @@ jobs:
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}
 
-    # Checks that all Terraform configuration files adhere to a canonical format
-    # - name: Terraform Format
-    #   uses: hashicorp/terraform-github-actions@master
-    #   with:
-    #     tf_actions_working_dir: 'terraform'
-    #     tf_actions_version: 0.14.7
-    #     tf_actions_subcommand: 'fmt'
-
-    # Generates an execution plan for Terraform
+    # Genera un excecution plan para terraform
     - name: Terraform Plan
       uses: hashicorp/terraform-github-actions@master
       with:
@@ -90,11 +82,11 @@ jobs:
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}
 
-      # On push to main, build or change infrastructure according to Terraform configuration files
-      # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
+      # Al pushear a la rama main, crea o cambia la infra de acuerdo con especificado en el archivo de config de terraform
+      # Colocar el ID de proyecto en gcp
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       id: apply
-      run: terraform -chdir=terraform/ apply -auto-approve -input=false -var="gcr_path=gcr.io/cloud-projects-365117/delay-flights" -var="github_sha=${{ github.sha }}"
+      run: terraform -chdir=terraform/ apply -auto-approve -input=false -var="gcr_path=gcr.io/ID_PROYECTO_GCP/delay-flights" -var="github_sha=${{ github.sha }}"
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}

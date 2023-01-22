@@ -18,7 +18,7 @@ variable "github_sha" {
 
 
 provider "google" {
-  project = "SU_PROYECT_ID" #indicar project id de gcp
+  project = "ID_PROYECTO_GCP" #indicar project id de gcp
 }
 
 # Activar Cloud Run API
