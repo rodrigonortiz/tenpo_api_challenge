@@ -1,26 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
-import sys
-import traceback
-from joblib import load
-
-import uvicorn
+from exception_handler import validation_exception_handler, python_exception_handler
+from fastapi.exceptions import RequestValidationError
 from fastapi import FastAPI, Request, status
 from fastapi.logger import logger
-from fastapi.encoders import jsonable_encoder
-from fastapi.responses import RedirectResponse, JSONResponse
-from fastapi.exceptions import RequestValidationError
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-
-import torch
-
+from joblib import load
 from predict import predict
 from config import CONFIG
-from exception_handler import validation_exception_handler, python_exception_handler
 from schema import *
+import torch
 
 
 

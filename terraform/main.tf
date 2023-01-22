@@ -57,7 +57,7 @@ resource "google_cloud_run_service_iam_member" "run_all_users" {
   member   = "allUsers"
 }
 
-# Mostrar el service URL
+# Mostrar la URL del servicio
 output "service_url" {
   value = google_cloud_run_service.run_service.status[0].url
 }

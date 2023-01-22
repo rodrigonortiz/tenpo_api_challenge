@@ -6,8 +6,8 @@ on:
   pull_request:
 env:
   PROJECT_ID: ID_PROYECTO_GCP # Colocar el ID de proyecto en gcp
-  DEPLOYMENT_NAME: delay-flights
-  IMAGE: delay-flights
+  DEPLOYMENT_NAME: tenpo_api_challenge
+  IMAGE: tenpo_api_challenge
 jobs:
   
   deployment_gcr:
@@ -18,13 +18,13 @@ jobs:
       - name: "Checkout" # Checkout del codigo de repositorio
         uses: "actions/checkout@v3"
 
-      # Setupe gcloud cli
+      # Setup gcloud cli
       - uses: google-github-actions/setup-gcloud@94337306dda8180d967a56932ceb4ddcf01edae7
         with:
           service_account_key: ${{ secrets.GCLOUD_SERVICE_KEY }}  #Agregar secret gcp en variable de entorno github
           project_id: ID_PROYECTO_GCP # Colocar el ID de proyecto en gcp
 
-      # Configurar Docker para usar la gcloud command-line tool como una credencial
+      # Configurar Docker para usar la gcloud command-line
       # helper authentication
       - run: |-
           gcloud --quiet auth configure-docker
@@ -41,6 +41,7 @@ jobs:
       - name: Publish
         run: |-
           docker push "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
+  
   terraform:
     name: 'Terraform'
     needs: [deployment_gcr]
@@ -55,7 +56,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    # Instala ultima version deTerraform CLI y la configura con Terraform Cloud user api token
+    # Instala ultima version de Terraform CLI y la configura con Terraform Cloud user api token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
 
@@ -74,18 +75,18 @@ jobs:
     - name: Terraform Plan
       uses: hashicorp/terraform-github-actions@master
       with:
-        tf_actions_working_dir: 'terraform'
+        tf_actions_working_dir: 'terraform' # Toma la configuracion de terraform/main.tf
         tf_actions_version: 0.14.7
         tf_actions_subcommand: 'plan'
-        args: '-var=gcr_path=gcr.io/cloud-projects-365117/delay-flights -var=github_sha=${{ github.sha }}'
+        args: '-var=gcr_path=gcr.io/cloud-projects-365117/tenpo_api_challenge -var=github_sha=${{ github.sha }}'
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}
+        GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }} #Agregar secret gcp en variable de entorno github
 
       # Al pushear a la rama main, crea o cambia la infra de acuerdo con especificado en el archivo de config de terraform
       # Colocar el ID de proyecto en gcp
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       id: apply
-      run: terraform -chdir=terraform/ apply -auto-approve -input=false -var="gcr_path=gcr.io/ID_PROYECTO_GCP/delay-flights" -var="github_sha=${{ github.sha }}"
+      run: terraform -chdir=terraform/ apply -auto-approve -input=false -var="gcr_path=gcr.io/ID_PROYECTO_GCP/tenpo_api_challenge -var="github_sha=${{ github.sha }}"
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_KEY }}
