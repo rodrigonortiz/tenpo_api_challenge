@@ -4,7 +4,9 @@
 
 
 He creado una API con **FastApi** para servir el modelo proporcionado en el challenge (No es un modelo en realidad, si no una operacion de multiplicacion de un tensor por un escalar (2) que oficia de inferencia para coincidir con lo requerido, de todas formas el codigo esta adaptado para cargar el modelo que desees. La API recibe como input una lista de valores numericos, convierte esa lista en un tensor, hace la multiplicacion sobre el mismo, convierte el tensor resultado en lista y lo devuelve.
-Ademas cuenta con un pipeline de **CI/CD** de **GitHub Actions**, aprovisionamiento de recursos con Terraform y despliegue en GCP (**Google Cloud Run**).
+Ademas cuenta con un pipeline de **CI/CD** de **GitHub Actions**, aprovisionamiento de recursos con Terraform y despliegue en GCP.
+
+Elegi el servicio de GCP **Google Cloud Run** por que nos permite desplegar y correr contenedores ademas de servir nuestra API de una forma rapida y sencilla.
 
 Esta lista para que hagas un build con el `Dockerfile`, la podes correr y probar en tu maquina local siguiendo estos pasos:
 
@@ -74,9 +76,9 @@ En la carpeta /`app` se encuentran todos los scripts necesarios para el funciona
 
 En el directorio `/model` puede cargar su modelo si lo deseea (**Reminder: estoy emulando el modelo con una simple operacion de tensores, pero el codigo se adapta facilmente a un modelo cargado que haga esto mismo, vea las lineas comentadas que hay en** `main.py`).
 
-En `.github/workflows` se encuentra el `workflow.yaml` con las definiciones necesarias para generar el CI/CD (Reemplazar `ID_PROYECTO_GCP` por su id real de proyencto en `GCP` y no se olvide de cargar en las secrets de GitHub la variable `GCLOUD_SERVICE_KEY` con la key proporcionada.
+En `.github/workflows` se encuentra el `workflow.yaml` con las definiciones necesarias para generar el CI/CD, emulando un despliegue en **staging** y teniendo como pasos principales pushear la imagen de docker a GCR, **init**, **plan settings** y **apply** de Terraform. Reemplazar `ID_PROYECTO_GCP` por su id real de proyencto en **GCP** y no se olvide de cargar en las secrets de GitHub la variable `GCLOUD_SERVICE_KEY` con la key proporcionada.
 
-En `/terraform/main.tf` va a encontrar las definiciones necesarias para montar la infraestructura en `GCP` (**Cloud Run API**).
+En `/terraform/main.tf` va a encontrar las definiciones necesarias para montar la infraestructura en `GCP`, variables, setup de provider, activacion de Cloud Run Api y puesta en funcionamiento de Cloud Run Service.
 
 Con solo hacer un push a la rama `main` del repositorio ya deberia ver en el apartado `Actions` el pipeline de CI/CD ejecutandose.
 
